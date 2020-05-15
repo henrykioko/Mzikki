@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#0320D8</item>
+        <item name="colorPrimaryDark">#3C5CAC</item>
+        <item name="colorAccent">@color/colorAccent</item>
+<!--        <item name="title">Boom Music</item>-->
+        <item name="titleTextColor">#08EDD2</item>
+        <item name="titleTextStyle">@id/italic</item>
+        <item name="titleMarginStart">150dp</item>
+
+        <!--        <item name="android:windowFullscreen">true</item>-->
+        <!--        <item name="windowNoTitle">true</item>-->
+    </style>
+</resources>

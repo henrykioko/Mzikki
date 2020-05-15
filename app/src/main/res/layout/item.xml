@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#6C76D3"
+    android:gravity="center_vertical"
+    android:state_pressed="false"
+    android:state_focused="true"
+    android:state_selected="false"
+    android:textSize="20sp"
+    android:drawableStart="@drawable/ic_side"
+    android:paddingStart="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingEnd="16dp"
+    android:textColor="#000000">
+
+</TextView>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<ListView
+    android:id="@+id/listView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1" />
+    <LinearLayout
+        android:id="@+id/playBackButtons"
+        android:background="@android:color/background_dark"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingStart="16dp"
+            android:paddingLeft="226dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/currentPosition"
+            android:layout_width= "0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+            <ImageButton
+                android:id="@+id/prevButton"
+                android:background="@drawable/ic_prev2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/pauseButton"
+                android:layout_marginLeft="53dp"
+                android:background="@drawable/ic_pause2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/nextButton"
+                android:layout_marginLeft="53dp"
+                android:background="@drawable/ic_next2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:paddingLeft="53dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/songDuration"
+            android:layout_gravity="end"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/songName"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:scrollHorizontally="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:visibility="gone"
+        android:background="@android:color/holo_red_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
